@@ -1,0 +1,124 @@
+.welcome{
+    position: absolute;
+    right: 0;
+    top: 100vh;
+    width: 79%;
+    flex-wrap: wrap;
+    /* height: 140vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+.welcome-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome > h1{
+    margin-top: 2vmax;
+    text-decoration: none;
+}
+.para{
+    text-align: center;
+    font-size: 1.1vmax;
+    color: gray;
+    /* letter-spacing: 1px; */
+    /* line-height: 26px; */
+}
+
+.welcome-section-1{
+    padding: 2vmax;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.welcome-section-3{
+    padding: 2vmax;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.welcome-section-2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.welcome-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .7vmax  3vmax;
+    margin-top: 3vmax;
+    border: 2px solid black;
+    font-size: 1.2vmax;
+    background-color: unset;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.welcome-btn:hover{
+    background-color: black;
+
+    color: white;
+}
+
+.below-welcome-1{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-self: center;
+    align-items: center;
+}
+
+.line{
+    border: 2px solid black;
+    margin: 0 3vmax ;
+    height:400px;
+}
+
+.para-2{
+    font-size: 1.4vmax;
+    color: gray;
+}
+
+@media screen and (max-width:700px) {
+    .welcome{
+        position: relative;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        box-sizing: border-box;
+    }
+    .welcome > h1{
+        margin-top: 5vmax;
+    }
+    .welcome-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .welcome-section-2{
+        padding: 2vmax;
+    }
+    .para , .para-2{
+        font-size: 3vmax;
+    }
+    .welcome-btn{
+        font-size: 3vmax;
+    } 
+    .welcome > h1{
+        font-size: 4vmax;
+    }
+}

@@ -1,0 +1,151 @@
+.side-nav{
+    display: grid;
+    grid-template-rows: 7fr 4fr 3fr;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 21%;
+    background-color: #161616;
+    position:fixed;
+}
+
+.nav-logo
+{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo > img{
+    height: 10vmax;
+    /* width: 200px; */
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax;
+    overflow-y: scroll;
+    font-size: 1.5vmax;
+}
+
+.nav-items > a{
+    text-decoration: none;
+    color: white;
+    margin : .7vmax 0 ;
+    transition: all 0.2s;
+}
+
+.nav-items > a:nth-child(1){
+    text-decoration: none;
+    color: white;
+    margin-top: -30px !important;
+}
+
+.nav-admin{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 3vmax;
+    font-size: 1.5vmax;
+}
+
+.nav-items > a:hover{
+    color: gray;
+}
+
+.admin-icon{
+    cursor: pointer;
+}
+
+.nav-dots{
+    display: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.nav-dots:hover{
+    color: gray;
+}
+
+.overlay-nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000e1;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    transition: all 0.4s;
+}
+
+.overlay-nav-items > a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    padding: 1.2vmax 0;
+    transition: all 0.4s;
+}
+
+.overlay-nav-items > a:hover{
+    color: gray;
+}
+.off-btn{
+    color:white;
+    font-size: 4vmax;
+    text-align: center;
+    padding: 2vmax;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.off-btn:hover{
+    color:gray;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .side-nav{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
+        height:10%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #161616;
+    }
+    .nav-items{
+        display: none;
+    }
+    .nav-admin{
+        display: none;
+    }
+    .nav-logo
+    {   
+    /* box-sizing: border-box; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4vmax ;
+    }
+    .nav-dots{
+        display: inline;
+        color: white;
+        font-size: 4vmax;
+        margin: 0 4vmax;
+    }
+    
+}
